@@ -2,6 +2,8 @@
 logs
 *.log
 npm-debug.log*
+.DS_Store
+.e2eTestLog
 
 # Runtime data
 pids
