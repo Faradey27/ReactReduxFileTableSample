@@ -10,9 +10,10 @@ const initialState = Immutable.fromJS({
 });
 
 export default createReducer(initialState, {
-  [ActionTypes.LOAD_FILE_LIST]: (state) => state.merge({
+  [ActionTypes.LOAD_FILE_LIST]: (state, action) => state.merge({
     isFetching: false,
     error: null,
+    list: action.payload.entities.result,
   }),
   [ActionTypes.LOAD_FILE]: (state) => state.merge({
     isFetching: false,

@@ -18,5 +18,5 @@ const getFilesData = (state) => state.getIn(['entities', 'file']);
 
 export const getFiles = createSelector(
   [getFilesData],
-  (files) => files
+  (files) => files.toList()
 );

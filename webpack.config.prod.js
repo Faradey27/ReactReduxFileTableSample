@@ -43,6 +43,7 @@ module.exports = {
           exclude: /node_modules/,
           include: __dirname
         },
+        { test: /\.json$/, loader: "json-loader" },
         {
           test: /\.js$/,
           loader: "eslint-loader?{parser: 'babel-eslint'}",

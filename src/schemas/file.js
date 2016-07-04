@@ -1,12 +1,7 @@
-import { Schema, arrayOf } from 'normalizr';
-import bookSchema from './bookSchema';
+import { Schema } from 'normalizr';
 
-const author = new Schema('author', {
+const file = new Schema('file', {
   idAttribute: 'name',
 });
 
-author.define({
-  books: arrayOf(bookSchema),
-});
-
-export default author;
+export default file;
