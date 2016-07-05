@@ -1,2 +1,2 @@
-import TablePage from './Table';
+import TablePage from './TablePage';
 export default TablePage;

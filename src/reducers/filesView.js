@@ -5,6 +5,7 @@ import * as ActionTypes from './../actions/files';
 
 const initialState = Immutable.fromJS({
   isFetching: false,
+  activeFileName: '',
   error: null,
   list: {},
 });
@@ -19,4 +20,5 @@ export default createReducer(initialState, {
     isFetching: false,
     error: null,
   }),
+  [ActionTypes.SET_ACTIVE_FILE_NAME]: (state, action) => state.merge({ activeFileName: action.name }),
 });

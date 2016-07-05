@@ -12,3 +12,6 @@ export const loadFile = () => ({ type: LOAD_FILE });
 
 export const UPLOAD_FILE = 'UPLOAD_FILE';
 export const uploadFile = (src) => ({ type: UPLOAD_FILE, src });
+
+export const SET_ACTIVE_FILE_NAME = 'SET_ACTIVE_FILE_NAME';
+export const setActiveFileName = (name) => ({ type: SET_ACTIVE_FILE_NAME, name });
